@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Parsec Opener</title>
+  </head>
+  <body>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const peer_id = urlParams.get('peer_id')
+      window.location.replace("parsec://peer_id=" + peer_id + ":client_vsync=1");
+    </script>
+  </body>
+</html>
